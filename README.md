@@ -1,6 +1,6 @@
 ## Hey there ✌️, I'm Chhaileng 🇰🇭
 
-<a href="https://github.com/chhaileng"><img width="55%" align="right" alt="Github Artwork" src="/assets/git-header.svg"/></a>
+<a href="https://github.com/chhaileng"><img width="55%" align="right" alt="Github Artwork" src="https://raw.githubusercontent.com/chhaileng/chhaileng/master/assets/git-header.svg"/></a>
 
 **About**
 
@@ -10,4 +10,3 @@
 - 🔗  ​ ​Or more at [www.chhaileng.com](https://www.chhaileng.com)
 
 ---
-
