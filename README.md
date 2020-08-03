@@ -5,7 +5,7 @@
 **About**
 
 - 💻 ​ ​Languages: `.js` `.java` `.py` `.sh` `.swift` `.go` `.r`
-- 👨‍💻 ​ ​Skills: Web & Mobile App, DB, Blockchain, [Hacking](http://www.hackthebox.eu/badge/image/16311)
+- 👨‍💻 ​ ​Skills: Web & Mobile App, DB, Server Admin, Blockchain, [Hacking](http://www.hackthebox.eu/badge/image/16311)
 - ✉️ ​ ​Reach me at contact@chhaileng.com
 - 🔗  ​ ​Or more at [www.chhaileng.com](https://www.chhaileng.com)
 
