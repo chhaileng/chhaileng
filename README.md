@@ -10,3 +10,8 @@
 - 🔗  ​ ​Or more at [www.chhaileng.com](https://www.chhaileng.com)
 
 ---
+
+**Badges**
+
+<a href="https://stackoverflow.com/users/7496198/chhaileng"><img src="https://stackoverflow.com/users/flair/7496198.png" width="208" height="58" alt="Stack Overflow" title="Stack Overflow"></a>
+<a href="https://www.hackthebox.eu/profile/16311"><img height="58" src="http://www.hackthebox.eu/badge/image/16311" alt="Hack The Box" title="Hack The Box"></a>
