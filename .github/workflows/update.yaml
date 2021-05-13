@@ -1,0 +1,25 @@
+name: update content
+
+on:
+  schedule:
+    - cron: '0 11 * * *'
+
+jobs:
+  update-readme-content:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get working copy
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Update README
+        run: |
+          bash script.sh
+      - name: 🚀 Push update
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -am "Update content"
+          git push --all -f https://${{ secrets.GITHUB_WORKFLOW_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git

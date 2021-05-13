@@ -1,3 +1,4 @@
+<!-- START OF README -->
 ## Hey there ✌️, I'm Chhaileng 🇰🇭
 
 <a href="https://github.com/chhaileng"><img width="55%" align="right" alt="Github Artwork" src="https://raw.githubusercontent.com/chhaileng/chhaileng/master/assets/git-header.svg"/></a>
@@ -17,3 +18,8 @@
 
 <a href="https://stackoverflow.com/users/7496198/chhaileng"><img src="https://stackoverflow.com/users/flair/7496198.png" width="208" height="58" alt="Stack Overflow" title="Stack Overflow"></a>&nbsp;&nbsp;
 <a href="https://www.hackthebox.eu/profile/16311"><img height="58" src="http://www.hackthebox.eu/badge/image/16311" alt="Hack The Box" title="Hack The Box"></a>
+
+<!-- START OF DYNAMIC CONTENT -->
+Last update: Thu May 13 10:57:16 +07 2021
+<!-- END OF DYNAMIC CONTENT -->
+<!-- END OF README -->
