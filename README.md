@@ -20,6 +20,6 @@
 <a href="https://www.hackthebox.eu/profile/16311"><img height="58" src="http://www.hackthebox.eu/badge/image/16311" alt="Hack The Box" title="Hack The Box"></a>
 
 <!-- START OF DYNAMIC CONTENT -->
-Last update: Sun May 30 01:39:36 UTC 2021
+Last update: Mon May 31 01:50:05 UTC 2021
 <!-- END OF DYNAMIC CONTENT -->
 <!-- END OF README -->
