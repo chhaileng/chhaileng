@@ -28,12 +28,12 @@ jobs:
           # Update timestamp on README.md
           README_START="<!-- START OF README -->"
           README_END="<!-- END OF README -->"
-          DYNAMIC_START="<!-- START OF UPDATED TIMESTAMP -->"
-          DYNAMIC_END="<!-- END OF UPDATED TIMESTAMP -->"
+          TIMESTAMP_START="<!-- START OF UPDATED TIMESTAMP -->"
+          TIMESTAMP_END="<!-- END OF UPDATED TIMESTAMP -->"
 
-          HEAD=$(cat README.md | sed -n "/${README_START}/,/${DYNAMIC_START}/p")
-          BODY=$(cat README.md | sed -n "/${DYNAMIC_START}/,/${DYNAMIC_END}/p" |sed -e '1d;$d')
-          TAIL=$(cat README.md | sed -n "/${DYNAMIC_END}/,/${README_END}/p")
+          HEAD=$(cat README.md | sed -n "/${README_START}/,/${TIMESTAMP_START}/p")
+          BODY=$(cat README.md | sed -n "/${TIMESTAMP_START}/,/${TIMESTAMP_END}/p" |sed -e '1d;$d')
+          TAIL=$(cat README.md | sed -n "/${TIMESTAMP_END}/,/${README_END}/p")
 
           DATE=$(TZ='Asia/Phnom_Penh' date +'%d-%m-%Y %T')
 
