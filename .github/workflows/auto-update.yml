@@ -22,6 +22,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🚀 Test sin
+      - name: 🚀 Push Updates
         run: |
-          git status
+          echo "${GITHUB_ACTOR}"
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -m "Update content at $(date +'%m-%d-%y')"
+          git push
