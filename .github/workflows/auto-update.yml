@@ -7,26 +7,46 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  update-content:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - uses: Platane/snk@v3
+      - name: Update Snake 🔥
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+            assets/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🚀 Push Updates
         run: |
-          echo "${GITHUB_ACTOR}"
+          # Update timestamp on README.md
+          README_START="<!-- START OF README -->"
+          README_END="<!-- END OF README -->"
+          DYNAMIC_START="<!-- START OF UPDATED TIMESTAMP -->"
+          DYNAMIC_END="<!-- END OF UPDATED TIMESTAMP -->"
+
+          HEAD=$(cat README.md | sed -n "/${README_START}/,/${DYNAMIC_START}/p")
+          BODY=$(cat README.md | sed -n "/${DYNAMIC_START}/,/${DYNAMIC_END}/p" |sed -e '1d;$d')
+          TAIL=$(cat README.md | sed -n "/${DYNAMIC_END}/,/${README_END}/p")
+
+          DATE=$(TZ='Asia/Phnom_Penh' date +'%d-%m-%Y %T')
+
+          # Override README.md
+          cat <<EOF > README.md
+          $HEAD
+          Last updated on: $DATE
+          $TAIL
+          EOF
+
+          # Push Changes
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
-          git commit -m "Updated at $(TZ='Asia/Phnom_Penh' date +'%d-%m-%Y %T')"
+          git commit -m "Updated on $DATE"
           git push
