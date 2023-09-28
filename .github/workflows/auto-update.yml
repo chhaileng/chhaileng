@@ -22,3 +22,12 @@ jobs:
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🚀 Push update
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git checkout dist
+          git add .
+          git commit -am "Update content $(date)"
+          git push --all -f https://${{ secrets.GITHUB_WORKFLOW_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
