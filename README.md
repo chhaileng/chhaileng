@@ -1,6 +1,12 @@
 <!-- START OF README -->
 ## Hey there ✌️, I'm Chhaileng 🇰🇭
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chhaileng/chhaileng/outputs/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chhaileng/chhaileng/outputs/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/chhaileng/chhaileng/outputs/github-snake.svg" />
+</picture>
+
 <a href="https://github.com/chhaileng"><img width="55%" align="right" alt="Github Artwork" src="https://raw.githubusercontent.com/chhaileng/chhaileng/master/assets/git-header.svg"/></a>
 
 **About**
