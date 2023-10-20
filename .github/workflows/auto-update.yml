@@ -40,7 +40,7 @@ jobs:
           # Override README.md
           cat <<EOF > README.md
           $HEAD
-          Last updated on: $DATE
+          <sub>*Last updated on: $DATE*</sub>
           $TAIL
           EOF
 
