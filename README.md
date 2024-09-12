@@ -16,7 +16,7 @@
 - ✉️ ​ ​Reach me at hello@chhaileng.com
 - 🔗  ​ ​Or more at [www.chhaileng.com](https://www.chhaileng.com)
 
-<a href="https://github.com/chhaileng"><img src="https://serverless.api.chhaileng.com/api/gh-profile-view.svg" alt="GitHub profile view" title="GitHub profile view"></a>
+<a href="https://github.com/chhaileng"><img src="https://serverless-api.chhaileng.com/api/gh-profile-view.svg" alt="GitHub profile view" title="GitHub profile view"></a>
 
 ---
 
