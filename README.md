@@ -26,6 +26,6 @@
 <a href="https://app.hackthebox.com/profile/16311"><img src="http://www.hackthebox.eu/badge/image/16311" alt="Hack The Box" title="Hack The Box"></a>
 
 <!-- START OF UPDATED TIMESTAMP -->
-<sub>*Last updated on: 02-04-2025 00:10:37*</sub>
+<sub>*Last updated on: 03-04-2025 00:10:07*</sub>
 <!-- END OF UPDATED TIMESTAMP -->
 <!-- END OF README -->
